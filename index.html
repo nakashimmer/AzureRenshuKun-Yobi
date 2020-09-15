@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Google Analytics --><script src="/ga.js"></script>
+		<meta charset=utf-8>
+		<title>★エディタ</title>
+		<meta name="viewport" content="width=900">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-1.11.1.js"></script>
+	</head>
+	<body>
+		
+		<div id=wrap>
+	
+			<h1><a href="../index.php">簡易テキストエディタ</a></h1>
+			<form method="post" action="action.php" id="form1">
+				<p>①ニックネーム入力:
+					<input type="text" name="name" id="name" placeholder="ニックネーム" required></p>
+				<p>②コード入力:
+					
+				</p>
+				<div id=outer>
+					<div id="no"></div>
+					<textarea id="editor" name="code" spellcheck="false"></textarea>
+				</div>
+			</form>
+			
+			<div class=flex>
+
+			<!-- ボタンの一覧 -->
+				<button id="btn" class="btn">③閲覧</button>
+			<!--	
+				<input type=submit id="submit" class=btn value="④公開" form="form1">
+				<a href="list.php" id="list" class=btn>⑤リスト</a>
+			-->
+				<a class="btn" id="download" href="#" download="noname.html" onclick="dl()">⑥DL</a>
+			
+			</div>
+			<div class=flex>
+				<button id="temp1" class="temp btn">テンプ</button>
+				<button id="temp2" class=" btn">回転</button>
+				<button id="temp3" class=" btn">伸縮</button>
+				<button id="temp4" class=" btn">移動</button>
+				<button id="temp5" class=" btn">合成</button>
+				<button id="temp6" class=" btn">三次元</button>
+			<!-- /ボタンの一覧 -->
+				<button id="clrbtn" class="btn">⑦消去</button>
+				<input class=" btn" type="submit" value="⑧検証" form="w3c">
+			</div>
+
+			
+
+			<!-- DL -->
+
+			<script>
+				function dl() {
+					var content = $id("editor").value;
+					var blob = new Blob([ content ],{"type":"text/plain"});
+					$id("download").href = window.URL.createObjectURL(blob);
+				}
+			</script>
+
+			<!-- /DL -->
+		</div>
+
+		<form target="_blank" id="w3c" method="post" enctype="multipart/form-data" action="https://validator.w3.org/check" >
+			<textarea id="w3cta" name="fragment" style="display:none;"></textarea>
+			<input type="hidden" name="prefill" value="0">
+			<input type="hidden" name="doctype"  value="Inline">
+			<input type="hidden" name="prefill_doctype" value="html5">
+		</form>	
+
+
+<script src="editor.js"></script>
+
+<script src="sample.js"></script>
+			
+		
+	</body>
+</html>
+
