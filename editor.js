@@ -34,7 +34,7 @@ for (let i = 1; i <= 5000 / 30; i++) {
 
 //データ保存
 $id("editor").addEventListener("mousemove",saveLS);
-$id("list").addEventListener("mousemove",saveLS);
+//$id("list").addEventListener("mousemove",saveLS);
 $id("submit").addEventListener("mousemove",saveLS);
 $id("btn").addEventListener("mousemove",saveLS);
 function saveLS(){
