@@ -1,3 +1,4 @@
 # tawsRenshuKunBU
 
-https://nakashimmer.github.io/tawsRenshuKunBU/index.html
+https://nakashimmer.github.io/tawsRenshuKunYobi/index.html
+
