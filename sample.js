@@ -229,7 +229,7 @@ $id("temp5").addEventListener("click", function () {
 		</style>
 	</head>
 	<body>
-		<h1>移動</h1>
+		<h1>合成</h1>
 		<div id="outer">
 			<div id="box1">🍎</div>
 		</div>
@@ -278,7 +278,7 @@ $id("temp6").addEventListener("click", function () {
 		</style>
 	</head>
 	<body>
-		<h1>移動</h1>
+		<h1>三次元</h1>
 		<div id="outer">
 			<div id="box1">🍎</div>
 		</div>
