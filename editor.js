@@ -51,7 +51,7 @@ $id("btn").addEventListener("click",function(){
 	var editor = $id("editor");
 	editor = editor.value;
 	if (typeof w === 'object') { w.close();} //JS対策
-	w = window.open("", "sample", 'width=500, height=500,top=50px,left=50px,resizable=1,menubar=1,toolbar=1');
+	w = window.open("", "sample", 'width=500, height=500,top=50px,left=50px,menubar=1,toolbar=1,resizable=1');
 	var doc = w.document;
 	doc.open();
 	doc.write(editor);
