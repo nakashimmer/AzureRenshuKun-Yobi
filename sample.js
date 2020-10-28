@@ -1,97 +1,34 @@
-$id("temp1").addEventListener("click",function(){
-	$id("editor").value
-=`a
-`;
-});
-
 $id("temp1").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>テンプレート</title>
-		<style>
-			*{margin:0px;padding:0px;}
-			h1{
-				height: 50px;
-				background-color: gray;
-				line-height: 50px;
-				text-align: center;
-				color: white;
-			}
-			#outer{
-				height: calc(100vh - 50px);
-				display: flex;
-  			justify-content: center;
-  			align-items: center;
-			}
-			#box1{
-				width: 1em;
-				line-height: 1em;
-				font-size: 50px;
-				text-align: center;
-				
-				transform-origin: center;
-				animation: mystory1 1s linear 0s infinite normal;
-				animation-fill-mode:both;
-			}
-			@keyframes mystory1{
-				100%{	}
-			}
-		</style>
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	</head>
 	<body>
-		<h1>テンプレート</h1>
-		<div id="outer">
-			<div id="box1">🍎</div>
-		</div>
+		<!-- ① -->
+
 	</body>
 </html>`;
 });
 
-$id("temp2").addEventListener("click",function(){
+$id("temp2").addEventListener("click", function () {
 	$id("editor").value
-=`<!DOCTYPE html>
+		= `<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>回転</title>
-		<style>
-			*{margin:0px;padding:0px;}
-			h1{
-				height: 50px;
-				background-color: gray;
-				line-height: 50px;
-				text-align: center;
-				color: white;
-			}
-			#outer{
-				height: calc(100vh - 50px);
-				display: flex;
-  			justify-content: center;
-  			align-items: center;
-			}
-			#box1{
-				width: 1em;
-				line-height: 1em;
-				font-size: 50px;
-				text-align: center;
-
-				transform-origin: center;
-				animation: mystory1 1s linear 0s infinite normal;
-				animation-fill-mode:both;
-			}
-			@keyframes mystory1{
-				100%{transform:rotate(360deg);}
-			}
-		</style>
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	</head>
 	<body>
-		<h1>回転</h1>
-		<div id="outer">
-			<div id="box1">🍎</div>
-		</div>
+		<!-- ① -->
+		<a-scene background="color:white">
+ 			<!-- ② --> 
+
+		</a-scene>
 	</body>
 </html>`;
 });
@@ -102,42 +39,20 @@ $id("temp3").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>伸縮</title>
-		<style>
-			*{margin:0px;padding:0px;}
-			h1{
-				height: 50px;
-				background-color: gray;
-				line-height: 50px;
-				text-align: center;
-				color: white;
-			}
-			#outer{
-				height: calc(100vh - 50px);
-				display: flex;
-  			justify-content: center;
-  			align-items: center;
-			}
-			#box1{
-				width: 1em;
-				line-height: 1em;
-				font-size: 50px;
-				text-align: center;
-
-				transform-origin: center;
-				animation: mystory1 1s linear 0s infinite alternate;
-				animation-fill-mode:both;
-			}
-			@keyframes mystory1{
-				100%{transform:scale(3);}
-			}
-		</style>
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	</head>
 	<body>
-		<h1>伸縮</h1>
-		<div id="outer">
-			<div id="box1">🍎</div>
-		</div>
+		<!-- ① -->
+		<a-scene background="color:white">
+ 			<!-- ② --> 
+				<!--光-->
+				<a-entity light="type:directional; castShadow:true; color:white;" position="-10 10 -1"></a-entity>
+
+				<!--反射光-->
+				<a-entity light="type:ambient; color:gray;"></a-entity>
+
+		</a-scene>
 	</body>
 </html>`;
 });
@@ -148,46 +63,28 @@ $id("temp4").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>移動</title>
-		<style>
-			*{margin:0px;padding:0px;}
-			h1{
-				height: 50px;
-				background-color: gray;
-				line-height: 50px;
-				text-align: center;
-				color: white;
-			}
-			#outer{
-				height: calc(100vh - 50px);
-				display: flex;
-  			justify-content: center;
-  			align-items: center;
-			}
-			#box1{
-				width: 1em;
-				line-height: 1em;
-				font-size: 50px;
-				text-align: center;
-
-				transform-origin: center;
-				animation: mystory1 1s linear 0s infinite normal;
-				animation-fill-mode:both;
-			}
-			@keyframes mystory1{
-				0%{transform:translate(-300px);}
-				100%{transform:translate(300px);}
-			}
-		</style>
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	</head>
 	<body>
-		<h1>移動</h1>
-		<div id="outer">
-			<div id="box1">🍎</div>
-		</div>
+		<!-- ① -->
+		<a-scene background="color:white">
+ 			<!-- ② --> 
+				<!--光-->
+				<a-entity light="type:directional; castShadow:true; color:white;" position="-10 10 -1"></a-entity>
+
+				<!--反射光-->
+				<a-entity light="type:ambient; color:gray;"></a-entity>
+
+				<!--立方体-->
+				<a-box position="-2 1 -3"  rotation="0 0 0" color="lime" width="1" height="1" depth="1" shadow></a-box>
+
+		</a-scene>
 	</body>
 </html>`;
 });
+
+
 
 $id("temp5").addEventListener("click", function () {
 	$id("editor").value
@@ -195,44 +92,26 @@ $id("temp5").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>合成</title>
-		<style>
-			*{margin:0px;padding:0px;}
-			h1{
-				height: 50px;
-				background-color: gray;
-				line-height: 50px;
-				text-align: center;
-				color: white;
-			}
-			#outer{
-				height: calc(100vh - 50px);
-				display: flex;
-  			justify-content: center;
-  			align-items: center;
-			}
-			#box1{
-				width: 1em;
-				line-height: 1em;
-				font-size: 50px;
-				text-align: center;
-
-				transform-origin: center;
-				animation: mystory1 1s linear 0s infinite normal;
-				animation-fill-mode:both;
-			}
-			@keyframes mystory1{
-				0%{transform:translate(-300px,0px) rotate(-360deg) scale(0,0);}
-				50%{transform:translate(0px,0px) rotate(0deg) scale(1,1);}
-				100%{transform:translate(300px,0px) rotate(360deg) scale(0,0);}
-			}
-		</style>
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	</head>
 	<body>
-		<h1>合成</h1>
-		<div id="outer">
-			<div id="box1">🍎</div>
-		</div>
+		<!-- ① -->
+		<a-scene background="color:white">
+ 			<!-- ② --> 
+				<!--光-->
+				<a-entity light="type:directional; castShadow:true; color:white;" position="-10 10 -1"></a-entity>
+
+				<!--反射光-->
+				<a-entity light="type:ambient; color:gray;"></a-entity>
+
+				<!--立方体-->
+				<a-box position="-2 1 -3"  rotation="0 0 0" color="lime" width="1" height="1" depth="1" shadow></a-box>
+
+				<!--球体-->
+				<a-sphere position="0 0.5 -3" radius="0.5" color="pink" shadow></a-sphere>
+
+		</a-scene>
 	</body>
 </html>`;
 });
@@ -243,45 +122,143 @@ $id("temp6").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>三次元</title>
-		<style>
-			*{margin:0px;padding:0px;}
-			h1{
-				height: 50px;
-				background-color: gray;
-				line-height: 50px;
-				text-align: center;
-				color: white;
-			}
-			#outer{
-				height: calc(100vh - 50px);
-				display: flex;
-  			justify-content: center;
-  			align-items: center;
-
-				transform-style:preserve-3d;
-				perspective:300px;
-			}
-			#box1{
-				width: 1em;
-				line-height: 1em;
-				font-size: 50px;
-				text-align: center;
-
-				transform-origin: center;
-				animation: mystory1 1s linear 0s infinite normal;
-				animation-fill-mode:both;
-			}
-			@keyframes mystory1{
-				100%{transform:rotateY(360deg);}
-			}
-		</style>
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	</head>
 	<body>
-		<h1>三次元</h1>
-		<div id="outer">
-			<div id="box1">🍎</div>
-		</div>
+		<!-- ① -->
+		<a-scene background="color:white">
+ 			<!-- ② --> 
+				<!--光-->
+				<a-entity light="type:directional; castShadow:true; color:white;" position="-10 10 -1"></a-entity>
+
+				<!--反射光-->
+				<a-entity light="type:ambient; color:gray;"></a-entity>
+
+				<!--立方体-->
+				<a-box position="-2 1 -3"  rotation="0 0 0" color="lime" width="1" height="1" depth="1" shadow></a-box>
+
+				<!--球体-->
+				<a-sphere position="0 0.5 -3" radius="0.5" color="pink" shadow></a-sphere>
+
+				<!--円形-->
+				<a-circle position="0 0.5 -3" rotation="-90 0 0" radius="1" color="gray" shadow></a-circle>
+
+		</a-scene>
+	</body>
+</html>`;
+});
+
+$id("temp7").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	</head>
+	<body>
+		<!-- ① -->
+		<a-scene background="color:white">
+ 			<!-- ② --> 
+				<!--光-->
+				<a-entity light="type:directional; castShadow:true; color:white;" position="-10 10 -1"></a-entity>
+
+				<!--反射光-->
+				<a-entity light="type:ambient; color:gray;"></a-entity>
+
+				<!--立方体-->
+				<a-box position="-2 1 -3"  rotation="0 0 0" color="lime" width="1" height="1" depth="1" shadow></a-box>
+
+				<!--球体-->
+				<a-sphere position="0 0.5 -3" radius="0.5" color="pink" shadow></a-sphere>
+
+				<!--円形-->
+				<a-circle position="0 0.5 -3" rotation="-90 0 0" radius="1" color="gray" shadow></a-circle>
+
+				<!--円柱-->
+				<a-cylinder position="2 1 -3" rotation="0 0 0" radius="0.5" height="1" segments-radial="5" color="yellow" shadow></a-cylinder>
+
+		</a-scene>
+	</body>
+</html>`;
+});
+
+$id("temp8").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	</head>
+	<body>
+		<!-- ① -->
+		<a-scene background="color:white">
+ 			<!-- ② --> 
+				<!--光-->
+				<a-entity light="type:directional; castShadow:true; color:white;" position="-10 10 -1"></a-entity>
+
+				<!--反射光-->
+				<a-entity light="type:ambient; color:gray;"></a-entity>
+
+				<!--立方体-->
+				<a-box position="-2 1 -3"  rotation="0 0 0" color="lime" width="1" height="1" depth="1" shadow></a-box>
+
+				<!--球体-->
+				<a-sphere position="0 0.5 -3" radius="0.5" color="pink" shadow></a-sphere>
+
+				<!--円形-->
+				<a-circle position="0 0.5 -3" rotation="-90 0 0" radius="1" color="gray" shadow></a-circle>
+
+				<!--円柱-->
+				<a-cylinder position="2 1 -3" rotation="0 0 0" radius="0.5" height="1" segments-radial="5" color="yellow" shadow></a-cylinder>
+				
+				<!--床-->
+				<a-plane position="0 0 -3" rotation="-90 0 0" width="6" height="3" color="#955629" shadow></a-plane>
+
+		</a-scene>
+	</body>
+</html>`;
+});
+
+$id("temp9").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	</head>
+	<body>
+		<!-- ① -->
+		<a-scene background="color:white">
+ 			<!-- ② --> 
+				<!--光-->
+				<a-entity light="type:directional; castShadow:true; color:white;" position="-10 10 -1"></a-entity>
+
+				<!--反射光-->
+				<a-entity light="type:ambient; color:gray;"></a-entity>
+
+				<!--立方体-->
+				<a-box position="-2 1 -3"  rotation="0 0 0" color="lime" width="1" height="1" depth="1" shadow animation="property: depth; to:2; dur: 1000; easing:linear; loop: true; dir:alternate;"></a-box>
+
+				<!--球体-->
+				<a-sphere position="0 0.5 -3" radius="0.5" color="pink" shadow  animation="property: position; to:0 1.5 -3; dur: 2000; easing:easeInQuad; loop: true; dir:alternate;"></a-sphere>
+
+				<!--円形-->
+				<a-circle position="0 0.5 -3" rotation="-90 0 0" radius="1" color="gray" shadow animation="property: position; to:0 1.5 -3; dur: 2000; easing:easeInQuad; loop: true; dir:alternate;"></a-circle>
+
+				<!--円柱-->
+				<a-cylinder position="2 1 -3" rotation="0 0 0" radius="0.5" height="1" segments-radial="5" color="yellow" shadow animation="  property: rotation; to:360 0 0 ; dur: 1000; easing:linear; loop: true; dir:normal;"></a-cylinder>
+				
+				<!--床-->
+				<a-plane position="0 0 -3" rotation="-90 0 0" width="6" height="3" color="#955629" shadow></a-plane>
+
+		</a-scene>
 	</body>
 </html>`;
 });
