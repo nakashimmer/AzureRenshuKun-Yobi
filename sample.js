@@ -25,7 +25,7 @@ $id("temp2").addEventListener("click", function () {
 	</head>
 	<body>
 		<!-- ① -->
-		<a-scene background="color:white">
+		<a-scene background="color:black">
  			<!-- ② --> 
 
 		</a-scene>
@@ -44,7 +44,7 @@ $id("temp3").addEventListener("click", function () {
 	</head>
 	<body>
 		<!-- ① -->
-		<a-scene background="color:white">
+		<a-scene background="color:black">
 		
 			<!-- ② --> 
 			<!--床-->
@@ -66,7 +66,7 @@ $id("temp4").addEventListener("click", function () {
 	</head>
 	<body>
 		<!-- ① -->
-		<a-scene background="color:white">
+		<a-scene background="color:black">
 
 			<!-- ② --> 
 			<!--床-->
@@ -94,7 +94,7 @@ $id("temp5").addEventListener("click", function () {
 	</head>
 	<body>
 		<!-- ① -->
-		<a-scene background="color:white">
+		<a-scene background="color:black">
 		 
 			<!-- ② -->
 			<!--床-->
@@ -127,7 +127,7 @@ $id("temp6").addEventListener("click", function () {
 	</head>
 	<body>
 		<!-- ① -->
-		<a-scene background="color:white">
+		<a-scene background="color:black">
 			<!-- ② --> 
 			<!--床-->
 			<a-plane position="0 0 -3" rotation="-90 0 0" width="6" height="3" color="#955629" shadow></a-plane>
@@ -160,7 +160,7 @@ $id("temp7").addEventListener("click", function () {
 	</head>
 	<body>
 		<!-- ① -->
-		<a-scene background="color:white">
+		<a-scene background="color:black">
 
 			<!-- ② -->
 			<!--床-->
@@ -197,7 +197,7 @@ $id("temp8").addEventListener("click", function () {
 	</head>
 	<body>
 		<!-- ① -->
-		<a-scene background="color:white">
+		<a-scene background="color:black">
  			<!-- ② --> 
 				<!--光-->
 				<a-entity light="type:directional; castShadow:true; color:white;" position="-10 10 -1"></a-entity>
@@ -233,7 +233,7 @@ $id("temp9").addEventListener("click", function () {
 	</head>
 	<body>
 		<!-- ① -->
-		<a-scene background="color:white">
+		<a-scene background="color:black">
 	
 			<!-- ② -->
 			<!--床-->
