@@ -34,7 +34,7 @@ p{line-height:50px;}
 	border:5px solid gray;padding:0px;
 	border-radius:0.5em;
 	width:calc(100% - 1em);
-	height:calc(100vh - 276px);
+	height:calc(100vh - 230px);
 	display:flex;
 	margin:0.5em;
 }

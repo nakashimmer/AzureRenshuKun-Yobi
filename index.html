@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Google Analytics --><script src="/tawsRenshuKunYobi/ga.js"></script>
+		<!-- Google Analytics -->
+		<script src="/tawsRenshuKunYobi/ga.js"></script>
 		<meta charset=utf-8>
 		<title>★エディタ</title>
 		<meta name="viewport" content="width=900">
@@ -10,76 +11,52 @@
 		<script src="jquery-1.11.1.js"></script>
 	</head>
 	<body>
-		
 		<div id=wrap>
-	
-			<h1><a href="../index.php">簡易テキストエディタ</a></h1>
+			<h1>簡易テキストエディタ（予備）</h1>
 			<form method="post" action="action.php" id="form1">
-				<p>①ニックネーム入力:
-					<input type="text" name="name" id="name" placeholder="ニックネーム" required></p>
-				<p>②コード入力:
-					
+				<p>①ニックネーム入力: <input type="text" name="name" id="name" placeholder="ニックネーム" required>
 				</p>
+				<p>②コード入力: </p>
 				<div id=outer>
 					<div id="no"></div>
-					<textarea id="editor" name="code" spellcheck="false"></textarea>
+					<textarea id="editor" name="code" spellcheck="false">
+						test
+					</textarea>
 				</div>
 			</form>
-			
 			<div class=flex>
-
-			<!-- ボタンの一覧 -->
+				<!-- ボタンの一覧 -->
 				<button id="btn" class="btn">③閲覧</button>
-				
-				<a href="list.html" id="submit" class=btn>④公開</a>
-				<a href="list.html" id="list" class=btn>⑤リスト</a>
-			
 				<a class="btn" id="download" href="#" download="noname.html" onclick="dl()">⑥DL</a>
-			
-			</div>
-			<div class=flex>
-				<button id="temp1" class="temp btn">1.テンプレ</button>
-				<button id="temp2" class=" btn">2.Scene</button>
-				<button id="temp3" class=" btn">3.plane</button>
-				<button id="temp4" class=" btn">4.Light</button>
-				<button id="temp5" class=" btn">5.box</button>
-				<button id="temp6" class=" btn">6.sphere</button>
-				<button id="temp7" class=" btn">7.circle</button>
-				<button id="temp8" class=" btn">8.cylinder</button>
-				<button id="temp9" class=" btn">9.animation</button>
-			<!-- /ボタンの一覧 -->
+				<button id="temp" class="temp btn">テンプレ反映</button>
+				<!-- /ボタンの一覧 -->
 				<button id="clrbtn" class="btn">⑦消去</button>
 				<input class=" btn" type="submit" value="⑧検証" form="w3c">
 			</div>
-
-			
-
 			<!-- DL -->
-
 			<script>
 				function dl() {
 					var content = $id("editor").value;
-					var blob = new Blob([ content ],{"type":"text/plain"});
+					var blob = new Blob([content], { "type": "text/plain" });
 					$id("download").href = window.URL.createObjectURL(blob);
 				}
 			</script>
-
 			<!-- /DL -->
 		</div>
-
-		<form target="_blank" id="w3c" method="post" enctype="multipart/form-data" action="https://validator.w3.org/check" >
+		<form target="_blank" id="w3c" method="post" enctype="multipart/form-data" action="https://validator.w3.org/check">
 			<textarea id="w3cta" name="fragment" style="display:none;"></textarea>
 			<input type="hidden" name="prefill" value="0">
-			<input type="hidden" name="doctype"  value="Inline">
+			<input type="hidden" name="doctype" value="Inline">
 			<input type="hidden" name="prefill_doctype" value="html5">
-		</form>	
+		</form>
+		<script src="editor.js"></script>
+		<script>
+			$id("temp").addEventListener(
+				"click", function () {
+					$id("editor").value = `<!DOCTYPE html>`;
+				}
+			);
 
-
-<script src="editor.js"></script>
-
-<script src="sample.js"></script>
-			
-		
+		</script>
 	</body>
 </html>
-
