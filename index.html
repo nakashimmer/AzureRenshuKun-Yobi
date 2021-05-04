@@ -14,8 +14,8 @@
 		<div id=wrap>
 			<h1>簡易テキストエディタ（予備）</h1>
 			<form method="post" action="action.php" id="form1">
-				<p>①ニックネーム入力: <input type="text" name="name" id="name" placeholder="ニックネーム" required>
-				</p>
+				<input type="hidden" name="name" id="name" placeholder="ニックネーム" required>
+				
 				<p>②コード入力: </p>
 				<div id=outer>
 					<div id="no"></div>
@@ -53,7 +53,9 @@
 		<script>
 			$id("temp").addEventListener(
 				"click", function () {
-					$id("editor").value = `<!DOCTYPE html>`;
+					$id("editor").value = `<!DOCTYPE HTML5>`;
+					localStorage.setItem("codeData", $id("editor").value);
+					window.location.reload();
 				}
 			);
 		</script>

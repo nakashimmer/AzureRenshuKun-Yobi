@@ -1,99 +1,118 @@
 @font-face {
 	/*Monacakomiのインストール*/
-  font-family: "Monacakomi";
-  src: url("https://nakashimmer.github.io/fontkeep/Monacakomi.woff2") format("woff2");
+	font-family: "Monacakomi";
+	src: url("https://nakashimmer.github.io/fontkeep/Monacakomi.woff2") format("woff2");
 }
 
-*{margin:0;padding:0;font-size:24px;box-sizing:border-box;
-text-decoration: none;font-family: sans-serif;}
-#wrap{
-	width:100%;
-	display:flex;
-	flex-direction:column;
-	height:100vh;
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
 }
 
-h1{
-	background-color:gray;
-	text-align:center;line-height:50px;}
-h1 a{
-	font-size:1em;
-	background-color: transparent;
-	color:white;
+#wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
-p{line-height:50px;}
-#name{width:10em;
-	border-radius:10px;
-	text-align:center;
+h1 {
+	background-color: gray;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 1em;
 }
 
-#outer{
-	flex:1;		/*高さが狭い時はこの数字を変更する*/
-	overflow:scroll;
-	border:5px solid gray;padding:0px;
-	border-radius:0.5em;
-	width:calc(100% - 1em);
-	height:calc(100vh - 230px);
-	display:flex;
-	margin:0.5em;
-}
-#no{
-	width:4em;
-	font-size:16px;
-	height:5000px;
-	background:linear-gradient(transparent 50%,#eee 50%);
-	background-size:auto 60px;
-
-} 
-#no div{
-	line-height:30px;
-	font-family:'Source Code Pro', monospace;
-	font-size:16px;
-	text-align:right;
-	font-style:italic;
-	color:#999;
-}
-#editor{
-	height:5000px;flex:1;
-	display:block;
-	line-height:30px;
-	padding:0em;
-	font-family:"Monacakomi",'Source Code Pro', monospace;
-	tab-size:2;
-	background:linear-gradient(transparent 50%,#eee 50%);
-	background-size:auto 60px;
-	border:none;
-	outline:none;
+p {
+	line-height: 50px;
 }
 
-.flex{display :flex;}
-.btn,a,#submit{
-	border:1px solid gray;
-	background-color:#eee;
-	height:41px;
-	line-height:41px;
-	font-size:16px;
-	text-align:center;
-	flex:1;
-	color:black;
-	display:inline-block;
-	margin:4px 2px 0px;
-	border-radius:2px;
+#name {
+	width: 10em;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#outer {
+	flex: 1;
+	/*高さが狭い時はこの数字を変更する*/
+	overflow: scroll;
+	border: 5px solid gray;
+	padding: 0px;
+	border-radius: 0.5em;
+	width: calc(100% - 1em);
+	height: calc(100vh - 180px);
+	display: flex;
+	margin: 0.5em;
+}
+
+#no {
+	width: 4em;
+	font-size: 16px;
+	height: 5000px;
+	background: linear-gradient(transparent 50%, #eee 50%);
+	background-size: auto 60px;
+}
+
+#no div {
+	line-height: 30px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	text-align: right;
+	font-style: italic;
+	color: #999;
+}
+
+#editor {
+	height: 5000px;
+	flex: 1;
+	display: block;
+	line-height: 30px;
+	padding: 0em;
+	font-family: "Monacakomi", 'Source Code Pro', monospace;
+	tab-size: 2;
+	background: linear-gradient(transparent 50%, #eee 50%);
+	background-size: auto 60px;
+	border: none;
+	outline: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.btn, a, #submit {
+	border: 1px solid gray;
+	background-color: #eee;
+	height: 41px;
+	line-height: 41px;
+	font-size: 16px;
+	text-align: center;
+	flex: 1;
+	color: black;
+	display: inline-block;
+	margin: 4px 2px 0px;
+	border-radius: 2px;
 	-webkit-appearance: none;
 }
 
 button {
-  overflow: hidden;
+	overflow: hidden;
 }
 
+#submit {
+	background-color: pink;
+}
 
-#submit{background-color:pink;}
-.temp{background-color:yellow;}
-#clrbtn{background-color:pink;}
+.temp {
+	background-color: yellow;
+}
 
-
-
-/*スクロールバーを非表示 (除Firefox)*/
-::-webkit-scrollbar{display:none;}
-*{-ms-overflow-style:none;}
+#clrbtn {
+	background-color: pink;
+}
