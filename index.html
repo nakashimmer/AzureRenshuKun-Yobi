@@ -1,66 +1,300 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<!-- Google Analytics -->
-		<script src="ga.js"></script>
-		<meta charset=utf-8>
-		<title>練習くん</title>
-		<meta name="viewport" content="width=900">
-		<link rel="stylesheet" href="style.css">
-		<script src="jquery-1.11.1.js"></script>
-	</head>
-	<body>
-		<div id=wrap>
-			<h1>練習くん</h1>
-			<form method="post" action="action.php" id="form1">
-				<input type="hidden" name="name" id="name" placeholder="ニックネーム" required>
-				<div id=outer>
-					<div id="no"></div>
-					<textarea id="editor" name="code" spellcheck="false" placeholder="②コード入力">
-						
-					</textarea>
-				</div>
-			</form>
-			<div class="flex">
-				<!-- ボタンの一覧 -->
-				<button id="btn" class="btn">③閲覧</button>
-				<a class="btn" id="download" href="#" download="noname.html" onclick="dl()">⑥DL</a>
-			</div>
-			<div class="flex">
-				<!-- 可変-->
-				<button id="temp1" class="temp btn">1.演算</button>
-				<!--
-				<button id="temp2" class=" btn">2.描画</button>
-				<button id="temp3" class=" btn">3.平面</button>
-				<button id="temp4" class=" btn">4.立方</button>
-				<button id="temp5" class=" btn">5.球体</button>
-				<button id="temp6" class=" btn">6.円盤</button>
-				<button id="temp7" class=" btn">7.円柱</button>
-				<button id="temp8" class=" btn">8.テキスト</button>
-				<button id="temp9" class=" btn">9.アニメーション</button>-->
-				<!-- /可変-->
 
-				<!-- /ボタンの一覧 -->
-				<button id="clrbtn" class="btn">⑦消去</button>
-				<input class=" btn" type="submit" value="⑧検証" form="w3c">
+<!DOCTYPE html>
+<html lanhg="ja">
+
+<head>
+	<meta http-equiv="content-language" content="ja">
+	<meta charset="utf-8">
+	<title>エディタ｜練習くん</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="/renshuKun/course/Yashima-Anime/favicon.ico">
+	<link rel="stylesheet" href="editor.css">
+	<style id="mobile">
+		#wrap {
+			height: auto;
+		}
+
+		#outer {
+			height: 60vh;
+			width: calc(100% - 2em);
+
+		}
+
+		#btns {
+			height: 50vh;
+		}
+
+		#btns:hover {
+			transform: translate(0px, 0px);
+		}
+
+		#editor {
+			tab-size: 1;
+		}
+
+		.flex:nth-of-type(2) {
+			display: block;
+		}
+
+		.btmbtn {
+			width: calc(50% - 4px);
+			float: left;
+		}
+
+		.flex:nth-of-type(2)::after {
+			clear: both;
+		}
+		.hidden{display:none;}
+	</style>
+	<script>
+		const mobile = document.getElementById("mobile");
+		if (!navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+			mobile.innerHTML = "";
+		}
+	</script>
+
+	<script src="jquery-1.11.1.js"></script>
+</head>
+
+<body>
+
+	<div id="wrap">
+
+		<h1>
+			練習くん：エディタ
+
+		</h1>
+
+
+
+		<form method="post" action="action.php" id="form1">
+			<p>
+				<input type="text" name="name" id="name" placeholder="①ニックネーム" required>
+			</p>
+
+			<div id=outer>
+				<div id="no"></div>
+				<textarea id="editor" name="code" spellcheck="false" placeholder="  ②Code入力"></textarea>
 			</div>
-			<!-- DL -->
-			<script>
-				function dl() {
-					var content = $id("editor").value;
-					var blob = new Blob([content], { "type": "text/plain" });
-					$id("download").href = window.URL.createObjectURL(blob);
-				}
-			</script>
-			<!-- /DL -->
-		</div>
-		<form target="_blank" id="w3c" method="post" enctype="multipart/form-data" action="https://validator.w3.org/check">
-			<textarea id="w3cta" name="fragment" style="display:none;"></textarea>
-			<input type="hidden" name="prefill" value="0">
-			<input type="hidden" name="doctype" value="Inline">
-			<input type="hidden" name="prefill_doctype" value="html5">
 		</form>
-		<script src="editor.js"></script>
-		<script src="course/sample.js"></script>
-	</body>
+
+		<div class=flex>
+
+			<!-- ボタンの一覧 -->
+			<button id="btn" class="btn">③閲覧</button>
+			<input type=submit id="submit" class="btn hidden" value="④公開" form="form1">
+			<a href="list.php" id="list" class=btn>⑤リスト</a>
+			<a class="btn" id="download" href="#" download="noname.html" onclick="dl()">⑥DL</a>
+			<div id="his" class="btn" style="overflow-y:scroll;width:200px;"></div>
+		</div>
+		<div class=flex>
+			<!-- サンプルボタン -->
+			
+<div id="btns">
+	<div id="btnsInner">
+		<!-- 2. -->
+		<button id="temp2-1" class="btn temp">2.1</button>
+		<button id="temp2-1-1" class="btn">2.1</button>
+		<button id="temp2-2" class="btn">2.2</button>
+		<button id="temp2-3" class="btn temp">2.3</button>
+		<button id="temp2-3-1" class="btn">2.3</button><br>
+		<!-- 3. -->
+		<button id="temp3-1" class="btn temp">3.1</button>
+		<button id="temp3-1-1" class="btn">3.1</button>
+		<button id="temp3-2" class="btn">3.2</button>
+		<button id="temp3-3-1" class="btn">3.3.1</button>
+		<button id="temp3-3-2" class="btn">3.3.2</button>
+		<button id="temp3-3-3" class="btn">3.3.3</button>
+		<button id="temp3-3-4" class="btn">3.3.4</button>
+		<button id="temp3-3-5" class="btn">3.3.5</button>
+		<button id="temp3-4-1" class="btn">3.4.1</button>
+		<button id="temp3-4-2" class="btn">3.4.2</button><br>
+		<!-- 4. -->
+		<button id="temp4-1" class="btn temp">4.1</button>
+		<button id="temp4-1-1" class="btn">4.1</button>
+		<button id="temp4-2" class="btn">4.2</button>
+		<button id="temp4-3" class="btn">4.3</button>
+		<button id="temp4-4" class="btn">4.4</button>
+		<button id="temp4-5" class="btn">4.5</button><br>
+		<!-- 5. -->
+		<button id="temp5-1" class="btn temp">5.1</button>
+		<button id="temp5-1-1" class="btn">5.1</button>
+		<button id="temp5-2" class="btn temp">5.2</button>
+		<button id="temp5-2-1" class="btn">5.2</button><br>
+		<!-- 6. -->
+		<button id="temp6-1" class="btn temp">6.1</button>
+		<button id="temp6-1-1" class="btn">6.1</button>
+		<button id="temp6-2" class="btn">6.2</button>
+		<button id="temp6-3" class="btn">6.3</button>
+		<button id="temp6-4" class="btn">6.4</button><br>
+		<!-- 7. -->
+		<button id="temp7-1" class="btn temp">7.1</button>
+		<button id="temp7-1-1" class="btn">7.1</button>
+		<button id="temp7-2-1" class="btn">7.2.1</button>
+		<button id="temp7-2-2" class="btn">7.2.2</button>
+		<button id="temp7-2-3" class="btn">7.2.3</button>
+		<button id="temp7-3" class="btn">7.3</button><br>
+		<!-- 8. -->
+		<button id="temp8-1" class="btn temp">8.1</button>
+		<button id="temp8-2" class="btn">8.2</button>
+		<button id="temp8-3" class="btn">8.3</button>
+		<button id="temp8-4" class="btn">8.4</button>
+		<button id="temp8-5" class="btn">8.5</button>
+		<button id="temp8-6" class="btn">8.6</button>
+		<button id="temp8-7" class="btn">8.7</button>
+	</div>
+</div>
+			<!-- /ボタンの一覧 -->
+			<button id="clrbtn" class="btn btmbtn">⑦消去</button>
+			<input class="btn btmbtn" type="submit" value="⑧検証" form="w3c">
+		</div>
+
+
+
+		<!-- DL -->
+
+		<script>
+			function dl() {
+				var content = $id("editor").value;
+				var blob = new Blob([content], {
+					"type": "text/plain"
+				});
+				$id("download").href = window.URL.createObjectURL(blob);
+			}
+		</script>
+
+		<!-- /DL -->
+	</div>
+
+	<form target="_blank" id="w3c" method="post" enctype="multipart/form-data" action="https://validator.w3.org/check">
+		<textarea id="w3cta" name="fragment" style="display:none;"></textarea>
+		<input type="hidden" name="prefill" value="0">
+		<input type="hidden" name="doctype" value="Inline">
+		<input type="hidden" name="prefill_doctype" value="html5">
+	</form>
+
+
+
+	<script>
+		function $id(id) {
+			return document.getElementById(id);
+		}
+
+		var content = localStorage.getItem("codeData");
+		var js_name = localStorage.getItem("js_name");
+		if (content) {
+			$id("editor").value = content;
+			$id("name").value = js_name;
+		}
+
+		$id("clrbtn").addEventListener("click", function() {
+			localStorage.clear();
+			editor.value = "";
+		});
+
+		$(function() {
+			$("textarea").on('keydown', function(e) {
+				// tabキー押下時の対応
+				if (e.which == 9 || e.keyCode == 9) {
+					e.preventDefault();
+					var pos = this.selectionStart;
+					var text = $(this).val();
+					// tabの挿入
+					$(this).val(text.substr(0, pos) + '\t' + text.substr(pos, text.length));
+					// カーソルの場所を移動
+					this.setSelectionRange(pos + 1, pos + 1);
+				}
+			});
+		});
+
+		for (let i = 1; i <= 6000 / 30; i++) {
+			$id("no").innerHTML += "<div>" + i + ":</div>";
+		}
+
+
+		//データ保存
+		$id("editor").addEventListener("mousemove", saveLS);
+		$id("list").addEventListener("mousemove", saveLS);
+		$id("submit").addEventListener("mousemove", saveLS);
+		$id("btn").addEventListener("mousemove", saveLS);
+
+		function saveLS() {
+			localStorage.setItem("codeData", $id("editor").value);
+			localStorage.setItem("js_name", $id("name").value);
+			$id("w3cta").value = $id("editor").value;
+		};
+
+		//履歴保存
+		$id("submit").addEventListener("mousedown", saveHistory);
+
+		function saveHistory() {
+			const now = new Date();
+			let year = now.getFullYear();
+			let month = (now.getMonth() + 1).toString().padStart(2, '0');
+			let day = now.getDate().toString().padStart(2, '0');
+			let hour = now.getHours().toString().padStart(2, '0');
+			let minute = now.getMinutes().toString().padStart(2, '0');
+			let second = now.getSeconds().toString().padStart(2, '0');
+			let saveTime = year + ":" + month + ":" + day + "-" + hour + ":" + minute + ":" + second;
+			localStorage.setItem("history" + saveTime, $id("editor").value);
+		}
+		///////////////
+
+		//閲覧ボタン
+		var w;
+		$id("btn").addEventListener("click", function() {
+			var editor = $id("editor");
+			editor = '<base href = "https://renshukun.azurewebsites.net/renshuKun/course/Yashima-Anime/sakuhin/">' + editor.value;
+			if (typeof w === 'object') {
+				w.close();
+			} //JS対策
+			w = window.open("", "sample", 'width=500, height=500,top=50px,left=50px;resizable=1');
+			var doc = w.document;
+			doc.open();
+			doc.write(editor);
+			doc.close();
+		});
+
+		//ダウンロード
+		function dl() {
+			var content = $id("editor").value;
+			var blob = new Blob([content], {
+				"type": "text/plain"
+			});
+			$id("download").href = window.URL.createObjectURL(blob);
+		}
+	</script>
+
+	<script>
+		let historyList = new Array();
+		for (key in localStorage) {
+			if (localStorage.hasOwnProperty(key)) {
+				if (key.slice(0, 7) === "history") {
+					historyList.push(key);
+					console.log(key);
+				}
+			}
+		}
+		historyList.sort().reverse();
+		console.log("sort:" + historyList);
+		for (let i = 0; i < historyList.length; i++) {
+			$id("his").innerHTML += "<button class=btn style='margin:0;width:calc(100% - 2px);' onclick=his('" + historyList[i] + "')>" + historyList[i].slice(12) + "</button>";
+		}
+		$id("his").innerHTML += '<button class=btn style="margin:0;width:calc(100% - 2px);" onclick="hisClr()")>履歴クリア</button>';
+
+		function hisClr() {
+			localStorage.clear();
+			$id("his").innerHTML = "履歴";
+		}
+
+		function his(h) {
+			let cont = localStorage.getItem(h);
+			$id("editor").value = cont;
+		}
+	</script>
+
+	<script src="course/sample.js"></script>
+
+</body>
+
 </html>
