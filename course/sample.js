@@ -1,569 +1,871 @@
-//1.
-$id("temp1-2_start").addEventListener("click", function () {
-	$id("editor").value
-		= `<★>
-<html>
-	<head>
-		<meta ★>
-		<title>1-2_start</title>
-		<meta ★>
-		<style>
-			/*CSSのエリア*/
-		</style>
-	</head>
-	<body>
-		<!-- コンテンツ -->
-
-		<★>
-			//JavaScriptのエリア
-
-		</★>
-	</body>
-</html>
-`;
-});
-
-$id("temp1-2").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>1-2</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			/*CSSのエリア*/
-		</style>
-	</head>
-	<body>
-		<!-- コンテンツ -->
-
-		<script>
-			//JavaScriptのエリア
-
-		</script>
-	</body>
-</html>
-`;
-});
-
 //2.
-$id("temp2-2_start").addEventListener("click", function () {
+
+$id("temp2-1").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>2-2_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
+		<title>2-1</title>
 	</head>
 	<body>
-		<★>
-		<script>
-			//★
-			//★
-		</script>
 	</body>
-</html>
-`;
+</html>`;
 });
 
-$id("temp2-2").addEventListener("click", function () {
+$id("temp2-2-1").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>2-2</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
+		<title>2-2-1</title>
 	</head>
 	<body>
-		<p id="output1">出力</p>
-		<script>
-			const output1 = document.getElementById("output1");
-			output1.innerHTML = "書き換えました！";
-		</script>
+		<p><audio src="media/myAudio.mp3" controls></audio></p>
 	</body>
-</html>
-`;
+</html>`;
 });
 
-$id("temp2-3").addEventListener("click", function () {
+
+$id("temp2-2-2").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>2-3</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
+		<title>2-2-2</title>
 	</head>
 	<body>
-		<button onclick="change1();">ボタン１</button>
-		<p id="output1">出力</p>
-		<script>
-			const output1 = document.getElementById("output1");
-			function change1(){	
-				output1.innerHTML = "書き換えました！";
+		<p><audio src="media/myAudio.mp3" controls></audio></p>
+		<p><video src="media/myVideo.mp4" controls playsinline></video></p>
+	</body>
+</html>`;
+});
+
+$id("temp2-2-3").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>2-2-3</title>
+	</head>
+	<body>
+		<p><audio src="media/myAudio.mp3" controls></audio></p>
+		<p><video src="media/myVideo.mp4" controls playsinline></video></p>
+		<p><button onclick='alert("押しましたね")'>ボタン</button></p>
+	</body>
+</html>`;
+});
+
+$id("temp2-2-4").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>2-2-4</title>
+	</head>
+	<body>
+		<p><audio src="media/myAudio.mp3" controls></audio></p>
+		<p><video src="media/myVideo.mp4" controls playsinline></video></p>
+		<p><button onclick='alert("押しましたね")'>ボタン</button></p>
+		<p><input type="text"></p>
+		<p><input type="password"></p>
+		<p><input type="range"></p>
+		<p><input type="date"></p>
+		<p><input type="color"></p>
+		<p><textarea></textarea></p>
+	</body>
+</html>`;
+});
+
+$id("temp3-0").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>3</title>
+		<style>
+			div {
+
 			}
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp2-4").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>2-4</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
 		</style>
 	</head>
 	<body>
-		<input type="text" id="input1">
-		<button onclick="change1();">ボタン１</button>
-		<p id="output1">出力</p>
-		<script>
-			const input1 = document.getElementById("input1");
-			const output1 = document.getElementById("output1");
-			function change1(){
-				output1.innerHTML = input1.value;
+		
+	</body>
+</html>`;
+});
+
+$id("temp3-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>3-1</title>
+		<style>
+			div {
+				border: 1px solid red;
+				width: 200px;
+				height: 200px;
+				margin: 50px auto;
 			}
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp2-5-1_start").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>2-5-1_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
 		</style>
 	</head>
 	<body>
-		<p id="output1">出力</p>
-		<button onclick="btn1();">ボタン1</button>
-		<script>
-			const output1=document.getElementById("output1");
-			//★
-			//★
-			function btn1(){	
-				output1.innerHTML = ★;
-			}
-		</script>
+		<div id="box1"></div>
 	</body>
-</html>
-`;
+</html>`;
 });
 
-$id("temp2-5-1").addEventListener("click", function () {
+$id("temp4-0").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>2-5-1</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
+		<title>4</title>
 	</head>
 	<body>
-		<p id="output1">出力</p>
-		<button onclick="btn1();">ボタン1</button>
-		<script>
-			const output1=document.getElementById("output1");
-			let n1 = 5;
-			let n2 = 3;
-			function btn1(){	
-				output1.innerHTML = n1+n2;
-			}
-		</script>
+		
 	</body>
-</html>
-`;
-});
-
-$id("temp2-5-2").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>2-5-2</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<p id="output1">出力</p>
-		<button onclick="btn1();">ボタン1</button>
-		<script>
-			const output1=document.getElementById("output1");
-			let n1 = "Hello ";
-			let n2 = "HTML";
-			function btn1(){
-				output1.innerHTML = n1+n2;
-			}
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp2-6_start").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>2-6_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<input type="text" id="input1">
-		<button onclick="btn1();">ボタン1</button>
-		<p id="output1">出力</p>
-		<script>
-			const input1 = document.getElementById("input1");
-			const output1 = document.getElementById("output1");
-		
-			//★	//正解の値
-		
-			function btn1(){
-				let n1 = Number(input1.value);
-				//★
-					output1.innerHTML = "正解";
-				//★
-					output1.innerHTML = "残念";
-				//★
-			}
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp2-6").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>2-6</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<input type="text" id="input1">
-		<button onclick="btn1();">ボタン1</button>
-		<p id="output1">出力</p>
-		<script>
-			const input1 = document.getElementById("input1");
-			const output1 = document.getElementById("output1");
-		
-			let correct1 = 50;	//正解の値
-		
-			function btn1(){
-				let n1 = Number(input1.value);
-				if(n1 === correct1){
-					output1.innerHTML = "正解";
-				}else{
-					output1.innerHTML = "残念";
-				}
-			}
-		</script>
-	</body>
-</html>
-`;
-});
-
-//3.
-
-$id("temp3-1_start").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>3-1_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<p id="date1">日付loading...</p>
-		<script>
-			const date1 = document.getElementById("date1");
-		
-			//★
-		
-			date1.innerHTML = ★;
-			//y+"年"+m+"月"+d+"日"+h+"時"+i+"分"+s+"秒"
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp3-1-1").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>3-1-1</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<p id="date1">日付loading...</p>
-		<script>
-			const date1 = document.getElementById("date1");
-		
-			const now = new Date();
-			let y = now.getFullYear();								//年
-			let m = now.getMonth()+1;									//月
-			let d = now.getDate();										//日
-			let w = now.getDay();											//曜日
-			let h = now.getHours();										//時
-			let i = now.getMinutes();									//分
-			let s = now.getSeconds();									//秒	
-		
-			date1.innerHTML = y+"年"+m+"月"+d+"日"+h+"時"+i+"分"+s+"秒"
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp3-1-2").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>3-1-2</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<p id="date1">日付loading...</p>
-		<script>
-			const date1 = document.getElementById("date1");
-		
-			setInterval(myclock,1000);
-
-			function myclock(){
-				const now = new Date();
-				let y = now.getFullYear();								//年
-				let m = now.getMonth()+1;									//月
-				let d = now.getDate();										//日
-				let w = now.getDay();											//曜日
-				let h = now.getHours();										//時
-				let i = now.getMinutes();									//分
-				let s = now.getSeconds();									//秒
-			
-				date1.innerHTML = y+"年"+m+"月"+d+"日"+h+"時"+i+"分"+s+"秒";
-			}
-				</script>
-	</body>
-</html>
-`;
-});
-
-//4.
-$id("temp4-1_start").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>4-1_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<p id="n">数学オブジェクト</p>
-		<script>
-			const n = document.getElementById("n");
-		
-			//★
-		
-			n.innerHTML = ★;													//n2,n3… 他の変数に変更する
-		</script>
-	</body>
-</html>
-`;
+</html>`;
 });
 
 $id("temp4-1").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
 		<title>4-1</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
 	</head>
 	<body>
-		<p id="n">数学オブジェクト</p>
+		<p id="output1">出力場所</p>
 		<script>
-			const n = document.getElementById("n");
-		
-			let n1 = Math.floor(3.14);								//切捨
-			// let n1 = Math.round(3.14);								//四捨五入
-			// let n1 = Math.ceil(3.14);									//切上
-			// let n1 = Math.pow(2,2);										//累乗
-			// const n1 = Math.PI;												//円周率
-			// let n1 = Math.random();										//乱数
-		
-			n.innerHTML =n1;													//n2,n3… 他の変数に変更する
+			const output1 = document.getElementById("output1");
+
 		</script>
 	</body>
-</html>
-`;
-});
-
-
-$id("temp4-3_start").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>4-3_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<h1>数当てゲーム</h1>
-		<p>0から9までの整数を入力：<input type="text" id="input1"></p>
-		<p><button onclick="btn1();">ボタン1</button></p>
-		<p id="result">結果</p>
-		<script>
-			
-			//★
-			
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp4-3").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>4-3</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-		</style>
-	</head>
-	<body>
-		<h1>数当てゲーム</h1>
-		<p>0から9までの整数を入力：<input type="text" id="input1"></p>
-		<p><button onclick="btn1();">ボタン1</button></p>
-		<p id="result">結果</p>
-		<script>
-			const input1 = document.getElementById("input1");
-			const result = document.getElementById("result");
-		
-			let n = Math.floor(Math.random()*10);
-		
-			function btn1(){
-				let n1 = Number(input1.value);
-				let judge;
-				if(n1 === n){
-					judge = "Good";
-				}else{
-					judge = "NG";
-				}
-		
-				result.innerHTML = judge;
-			}
-		</script>
-	</body>
-</html>
-`;
-});
-
-
-//5. 
-$id("temp5-1_start").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>5-1_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style> 
-		</style>
-	</head>
-	<body>
-		<h1>オーディオ</h1>
-		<p><audio id="audio1" src="media/audio.mp3"></audio></p>
-		<p>
-			<button onclick="//★">再生</button>
-			<button onclick="//★">停止</button>
-			<button onclick="//★">最初から</button>
-			<button onclick="//★">音を小さく</button>
-			<button onclick="//★">音を大きく</button>
-			<button onclick="//★">早く</button>
-			<button onclick="//★">ゆっくり</button>
-		</p>
-		<script>
-			//★
-		</script>
-	</body>
-</html>
-`;
+</html>`;
 });
 
 $id("temp5-1").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
 		<title>5-1</title>
-		<meta name="viewport" content="width=device-width">
-		<style> 
-		</style>
 	</head>
 	<body>
-		<h1>オーディオ</h1>
-		<p><audio id="audio1" src="media/audio.mp3"></audio></p>
+		<p id="output1">出力場所</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			output1.innerHTML = "こんにちは！";
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp5-2").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>5-2</title>
+	</head>
+	<body>
+		<button onclick="btn1();">ボタン1</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			function btn1() {
+				output1.innerHTML = "こんにちは！";
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp5-3").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>5-3</title>
+	</head>
+	<body>
+		<button onclick="btn1();">ボタン1</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			function btn1() {
+				let n1 = 5;
+				n1 = 3;
+				output1.innerHTML = n1;
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp5-4").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>5-4</title>
+	</head>
+	<body>
+		<button onclick="btn1();">ボタン1</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			function btn1() {
+				const n2 = 3.14;
+				output1.innerHTML = n2;
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp5-5").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>5-5</title>
+	</head>
+	<body>
+		<button onclick="btn1();">ボタン1</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			function btn1() {
+				const week = new Array("日", "月", "火", "水", "木", "金", "土");
+				output1.innerHTML = week[1];
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp5-6").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>5-6</title>
+	</head>
+	<body>
+		<button onclick="btn1();">ボタン1</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			function btn1() {
+				let n1 = 5;
+				let n2 = 3;
+				let n3 = n1 + n2;
+				output1.innerHTML = n3;
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp5-7").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>5-7</title>
+	</head>
+	<body>
+		<button onclick="btn1();">ボタン1</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			function btn1() {
+				let str1 = "Pen";
+				let str2 = "Pineapple";
+				let str3 = str1 + str2;
+				output1.innerHTML = str3;
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp6-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>6</title>
+	</head>
+	<body>
+		<input type="text" id="input1">
+		<button onclick="btn1();">ボタン１</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const input1 = document.getElementById("input1");
+			const output1 = document.getElementById("output1");
+			function btn1() {
+				output1.innerHTML = input1.value;
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp6-2-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>6-2-1</title>
+	</head>
+	<body>
+		<input type="text" id="input1">
+		<button onclick="btn1();">ボタン１</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const input1 = document.getElementById("input1");
+			const output1 = document.getElementById("output1");
+			let n1 = 50;
+			function btn1() {
+				if (Number(input1.value) === n1) {
+					output1.innerHTML = "正解";
+				} else {
+					output1.innerHTML = "残念";
+				}
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp6-2-2").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>6-2-2</title>
+	</head>
+	<body>
+		<input type="text" id="input1">
+		<button onclick="btn1();">ボタン１</button>
+		<p id="output1">出力場所</p>
+		<script>
+			const input1 = document.getElementById("input1");
+			const output1 = document.getElementById("output1");
+			let n1 = 50;
+			function btn1() {
+				let n2 = Number(input1.value);
+				if (n1 < n2) {
+					output1.innerHTML = "多いです";
+				} else if (n1 > n2) {
+					output1.innerHTML = "少ないです";
+				} else {
+					output1.innerHTML = "正解";
+				}
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp7-0").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>7</title>
+	</head>
+	<body>
+	
+	</body>
+</html>`;
+});
+
+$id("temp7").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>7</title>
+	</head>
+	<body>
+		<h1>計算機</h1>
+		<p>n1:<input id="input1" type="text"></p>
+		<p>n2:<input id="input2" type="text"></p>
+		<p>
+			<button onclick="btn(1);">＋</button>
+			<button onclick="btn(2);">−</button>
+			<button onclick="btn(3);">×</button>
+			<button onclick="btn(4);">÷</button>
+		</p>
+		<p id="output1">結果を表示</p>
+		<script>
+			const input1 = document.getElementById("input1");
+			const input2 = document.getElementById("input2");
+			const output1 = document.getElementById("output1");
+			function btn(i) {
+				let n1 = Number(input1.value);
+				let n2 = Number(input2.value);
+				let n3;
+				if (i === 1) {
+					n3 = n1 + n2;
+				} else if (i === 2) {
+					n3 = n1 - n2;
+				} else if (i === 3) {
+					n3 = n1 * n2;
+				} else {
+					n3 = n1 / n2;
+				}
+				output1.innerHTML = n3;
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp8-0").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>8</title>
+	</head>
+	<body>
+		<p id="output1">日付情報</p>
+		<script>
+			const output1 = document.getElementById("output1");
+
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp8-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>8-1</title>
+	</head>
+	<body>
+		<p id="output1">日付情報</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			const now = new Date();
+			output1.innerHTML = now;
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp8-2").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>8-2</title>
+	</head>
+	<body>
+		<p id="output1">日付情報</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			const now = new Date();
+			let y = now.getFullYear();
+			let m = now.getMonth() + 1;
+			let d = now.getDate();
+			let w = now.getDay();
+			let h = now.getHours();
+			let i = now.getMinutes();
+			let s = now.getSeconds();
+			const week = new Array("日", "月", "火", "水", "木", "金", "土");
+			output1.innerHTML = y + "年" + m + "月" + d + "日" + week[w] + "曜日" + h + "時" + i + "分" + s + "秒";
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp8-3").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>8-3</title>
+	</head>
+	<body>
+		<p id="output1">日付情報</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			setInterval(clock, 1000);
+			function clock() {
+				const now = new Date();
+				let y = now.getFullYear();
+				let m = now.getMonth() + 1;
+				let d = now.getDate();
+				let w = now.getDay();
+				let h = now.getHours();
+				let i = now.getMinutes();
+				let s = now.getSeconds();
+				const week = new Array("日", "月", "火", "水", "木", "金", "土");
+				output1.innerHTML = y + "年" + m + "月" + d + "日" + week[w] + "曜日" + h + "時" + i + "分" + s + "秒";
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp8-4").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>8-4</title>
+	</head>
+	<body>
+		<h1>きょうはなんの日？</h1>
+		<p>今日は<span id="output1">〇〇</span>です。</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			const now = new Date();
+			let m = now.getMonth() + 1;
+			let d = now.getDate();
+			m = 1; d = 1; //チェック用
+			let nani;
+			if (m === 1 && d === 1) {
+				nani = "正月";
+			} else if (m === 12 && d === 24) {
+				nani = "クリスマス";
+			} else if (m === 12 && d === 31) {
+				nani = "大晦日";
+			} else {
+				nani = "なんでもない日バンザイ！";
+			}
+			output1.innerHTML = nani;
+		</script>
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp9-0").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9</title>
+	</head>
+	<body>
+		<p id="output1"></p>
+		<script>
+			const output1 = document.getElementById("output1");
+
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp9-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9-1</title>
+	</head>
+	<body>
+		<p id="output1"></p>
+		<script>
+			const output1 = document.getElementById("output1");
+			let n1 = 3.14;
+			
+			output1.innerHTML = n1;
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp9-1-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9-1-1</title>
+	</head>
+	<body>
+		<p id="output1"></p>
+		<script>
+			const output1 = document.getElementById("output1");
+			let n1 = 3.14;
+			n1 = Math.floor(n1);
+			output1.innerHTML = n1;
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp9-1-2").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9-1-2</title>
+	</head>
+	<body>
+		<p id="output1"></p>
+		<script>
+			const output1 = document.getElementById("output1");
+			let n1 = 3.14;
+			n1 = Math.round(n1);
+			output1.innerHTML = n1;
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp9-1-3").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9-1-3</title>
+	</head>
+	<body>
+		<p id="output1"></p>
+		<script>
+			const output1 = document.getElementById("output1");
+			let n1 = 3.14;
+			n1 = Math.ceil(n1);
+			output1.innerHTML = n1;
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp9-1-4").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9-1-4</title>
+	</head>
+	<body>
+		<p id="output1"></p>
+		<script>
+			const output1 = document.getElementById("output1");
+			let n1 = Math.pow(2, 3);
+			output1.innerHTML = n1;
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp9-1-5").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9-1-5</title>
+	</head>
+	<body>
+		<p id="output1"></p>
+		<script>
+			const output1 = document.getElementById("output1");
+			const n1 = Math.PI;
+			output1.innerHTML = n1;
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp9-2").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9-2</title>
+	</head>
+	<body>
+		<p id="output1"></p>
+		<script>
+			const output1 = document.getElementById("output1");
+			let max = 3;
+			let n = Math.floor(Math.random() * max);
+			output1.innerHTML = n1;
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp9-3").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>9-3</title>
+	</head>
+	<body>
+		<h1>占いアプリ</h1>
+		<p>あなたのきょうの運勢は<span id="output1"></span>です。</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			let result;
+			let max = 3;
+			let n = Math.floor(Math.random() * max);
+			if (n === 0) {
+				result = "大吉";
+			} else if (n === 1) {
+				result = "中吉";
+			} else if (n === 2) {
+				result = "小吉";
+			} else {
+				result = "エラー";
+			}
+			output1.innerHTML = result;
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp10-0").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>10</title>
+	</head>
+	<body>
+	
+	</body>
+</html>`;
+});
+
+$id("temp10").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>10</title>
+	</head>
+	<body>
+		<h1>じゃんけんゲーム</h1>
+		<p>
+			<button onclick="janken('グー');">ぐー</button>
+			<button onclick="janken('チョキ');">ちょき</button>
+			<button onclick="janken('パー');">ぱー</button>
+		</p>
+		<p id="output1">じゃんけん・・・</p>
+		<script>
+			const output1 = document.getElementById("output1");
+			//得点
+			let point = 0;
+			let judge;
+			function janken(player) {
+				//PCの手
+				let pc = Math.floor(Math.random() * 3);
+				if (pc === 0) { pc = "グー"; }
+				if (pc === 1) { pc = "チョキ"; }
+				if (pc === 2) { pc = "パー"; }
+				//判定
+				if (player === "グー") {
+					if (pc === "チョキ") { judge = "勝ち"; point++; }
+					if (pc === "パー") { judge = "負け"; point--; }
+					if (pc === "グー") { judge = "あいこ"; }
+				}
+				if (player === "チョキ") {
+					if (pc === "パー") { judge = "勝ち"; point++; }
+					if (pc === "グー") { judge = "負け"; point--; }
+					if ( pc === "チョキ") { judge = "あいこ"; }
+				}
+				if (player === "パー") {
+					if (pc === "グー") { judge = "勝ち"; point++; }
+					if (pc === "チョキ") { judge = "負け"; point--; }
+					if (pc === "パー") { judge = "あいこ"; }
+				}
+
+				//ページに表示
+				output1.innerHTML = "<p>PCは" + pc + "</p><p>あなたは" + player + "</p><p>" + judge + "</p><p>得点" + point + "</p>";
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+
+$id("temp11-0").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>11</title>
+	</head>
+	<body>
+		
+	</body>
+</html>`;
+});
+
+$id("temp11-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>11-1</title>
+	</head>
+	<body>
+		<audio id="audio1" src="media/myAudio.mp3"></audio>
 		<p>
 			<button onclick="audio1.play();">再生</button>
 			<button onclick="audio1.pause();">停止</button>
-			<button onclick="audio1.currentTime = 0;">最初から</	button>
+			<button onclick="audio1.currentTime=0;audio1.play();">最初から</button>
 			<button onclick="audio1.volume -= 0.2;">音を小さく</button>
 			<button onclick="audio1.volume += 0.2;">音を大きく</button>
 			<button onclick="audio1.playbackRate += 0.5;">早く</button>
@@ -573,672 +875,203 @@ $id("temp5-1").addEventListener("click", function () {
 			const audio1 = document.getElementById("audio1");
 		</script>
 	</body>
-</html>
-`;
+</html>`;
 });
 
-$id("temp5-2_start").addEventListener("click", function () {
+$id("temp11-2").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>5-2_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style> 
-		</style>
+		<title>11-2</title>
 	</head>
 	<body>
-		<h1>ビデオ</h1>
-		<p><video id="video1" src="media/video.m4v" width="320"></video></p>
-		<p>
-			<button onclick="//★">再生</button>
-			<button onclick="//★">一旦停止 </button>
-			<button onclick="//★">最初から</button>
-			<button onclick="//★">音を小さく</button>
-			<button onclick="//★">音を大きく</button>
-			<button onclick="//★">早く</button>	
-			<button onclick="//★">ゆっくり</button>
-		</p>
-		<script>
-			//★
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp5-2").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>5-2</title>
-		<meta name="viewport" content="width=device-width">
-		<style> 
-		</style>
-	</head>
-	<body>
-		<h1>ビデオ</h1>
-		<p><video id="video1" src="media/video.m4v" width="320"></video></p>
+		<video id="video1" src="media/myVideo.mp4" loop></video>
 		<p>
 			<button onclick="video1.play();">再生</button>
 			<button onclick="video1.pause();">一旦停止 </button>
-			<button onclick="video1.currentTime = 0;">最初から</button>
+			<button onclick="video1.currentTime=0;">最初から</button>
 			<button onclick="video1.volume -= 0.2;">音を小さく</button>
 			<button onclick="video1.volume += 0.2;">音を大きく</button>
-			<button onclick="video1.playbackRate += 0.5;">早く</button>	
+			<button onclick="video1.playbackRate += 0.5;">早く</button>
 			<button onclick="video1.playbackRate -= 0.5;">ゆっくり</button>
 		</p>
 		<script>
 			const video1 = document.getElementById("video1");
 		</script>
 	</body>
-</html>
-`;
+</html>`;
 });
 
 
-//6.
-
-$id("temp6-1_start").addEventListener("click", function () {
+$id("temp12-0").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>6-1_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
+		<title>12</title>
 	</head>
 	<body>
-		<p><canvas id="canvas" width="300" height="300"></canvas></p>
+		<p>key：<input id="input1" type="text"></p>
+		<p>value：<input id="input2" type="text"></p>
+		<p>
+			<button onclick="myset();">保存</button>
+			<button onclick="myget();">読出</button>
+			<button onclick="myrmv();">削除</button>
+			<button onclick="myclr();">全削除</button>
+		</p>
 		<script>
-			const canvas = document.getElementById("canvas");
-			//★
-		
-			// ここに図形の描画のコードを記述します。
-		
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp6-1").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>6-1</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="300" height="300"></canvas></p>
-		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			// ここに図形の描画のコードを記述します。
-		
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp6-2-1").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>6-2-1</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="300" height="300"></canvas></p>
-		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			// ここに図形の描画のコードを記述します。
-			ctx.fillStyle = "red";								//塗色
-			ctx.fillRect(0,0,100,100);						//矩形(x,y,幅,高さ)
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp6-2-2").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>6-2-2</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="300" height="300"></canvas></p>
-		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			// ここに図形の描画のコードを記述します。
-			ctx.fillStyle = "red";								//塗色
-			ctx.fillRect(0,0,100,100);						//矩形(x,y,幅,高さ)
-
-			ctx.beginPath();											//パス開始
-			ctx.moveTo(150,0);										//開始点の(x,y)座標
-			ctx.lineTo(100,100);									//頂点の(x,y)座標
-			ctx.lineTo(200,100); 									//頂点の(x,y)座標
-			ctx.closePath(); 										//パス終了
-			ctx.fillStyle = "green";
-			ctx.fill();													//塗る
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp6-2-3").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>6-2-3</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="300" height="300"></canvas></p>
-		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			// ここに図形の描画のコードを記述します。
-			ctx.fillStyle = "red";								//塗色
-			ctx.fillRect(0,0,100,100);						//矩形(x,y,幅,高さ)
-
-			ctx.beginPath();											//パス開始
-			ctx.moveTo(150,0);										//開始点の(x,y)座標
-			ctx.lineTo(100,100);									//頂点の(x,y)座標
-			ctx.lineTo(200,100); 									//頂点の(x,y)座標
-			ctx.closePath(); 										//パス終了
-			ctx.fillStyle = "green";
-			ctx.fill();													//塗る
-
-			ctx.beginPath();
-			ctx.moveTo(200,0);
-			ctx.lineTo(300,100);
-			ctx.lineWidth = 1;										//線の幅
-			ctx.strokeStyle = "blue";							//線の色
-			ctx.stroke();												//線を引く
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp6-2-4").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>6-2-4</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="300" height="300"></canvas></p>
-		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			// ここに図形の描画のコードを記述します。
-			ctx.fillStyle = "red";								//塗色
-			ctx.fillRect(0,0,100,100);						//矩形(x,y,幅,高さ)
-
-			ctx.beginPath();											//パス開始
-			ctx.moveTo(150,0);										//開始点の(x,y)座標
-			ctx.lineTo(100,100);									//頂点の(x,y)座標
-			ctx.lineTo(200,100); 									//頂点の(x,y)座標
-			ctx.closePath(); 										//パス終了
-			ctx.fillStyle = "green";
-			ctx.fill();													//塗る
-
-			ctx.beginPath();
-			ctx.moveTo(200,0);
-			ctx.lineTo(300,100);
-			ctx.lineWidth = 1;										//線の幅
-			ctx.strokeStyle = "blue";							//線の色
-			ctx.stroke();												//線を引く
-
-			let angle1 = 10/180 * Math.PI ;
-			let angle2 = 200/180 * Math.PI ; 
-			ctx.beginPath();
-			ctx.moveTo(50,150);
-			ctx.arc(50, 150, 40, angle1, angle2, false);		//円弧のパス
-			ctx.closePath();
-			ctx.fillStyle = "skyblue";
-			ctx.fill();
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp6-2-5").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>6-2-5</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="300" height="300"></canvas></p>
-		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			// ここに図形の描画のコードを記述します。
-			ctx.fillStyle = "red";								//塗色
-			ctx.fillRect(0,0,100,100);						//矩形(x,y,幅,高さ)
-
-			ctx.beginPath();											//パス開始
-			ctx.moveTo(150,0);										//開始点の(x,y)座標
-			ctx.lineTo(100,100);									//頂点の(x,y)座標
-			ctx.lineTo(200,100); 									//頂点の(x,y)座標
-			ctx.closePath(); 										//パス終了
-			ctx.fillStyle = "green";
-			ctx.fill();													//塗る
-
-			ctx.beginPath();
-			ctx.moveTo(200,0);
-			ctx.lineTo(300,100);
-			ctx.lineWidth = 1;										//線の幅
-			ctx.strokeStyle = "blue";							//線の色
-			ctx.stroke();												//線を引く
-
-			let angle1 = 10/180 * Math.PI ;
-			let angle2 = 200/180 * Math.PI ; 
-			ctx.beginPath();
-			ctx.moveTo(50,150);
-			ctx.arc(50, 150, 40, angle1, angle2, false);		//円弧のパス
-			ctx.closePath();
-			ctx.fillStyle = "skyblue";
-			ctx.fill();
-
-			ctx.fillStyle = "black";
-			ctx.font = "100px serif";								//文字の大きさとフォント
-			ctx.fillText("Hello",0,300);						//文字の描画
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp6-2-6").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>6-2-6</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="300" height="300"></canvas></p>
-		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			// ここに図形の描画のコードを記述します。
-			ctx.fillStyle = "red";								//塗色
-			ctx.fillRect(0,0,100,100);						//矩形(x,y,幅,高さ)
-
-			ctx.beginPath();											//パス開始
-			ctx.moveTo(150,0);										//開始点の(x,y)座標
-			ctx.lineTo(100,100);									//頂点の(x,y)座標
-			ctx.lineTo(200,100); 									//頂点の(x,y)座標
-			ctx.closePath(); 										//パス終了
-			ctx.fillStyle = "green";
-			ctx.fill();													//塗る
-
-			ctx.beginPath();
-			ctx.moveTo(200,0);
-			ctx.lineTo(300,100);
-			ctx.lineWidth = 1;										//線の幅
-			ctx.strokeStyle = "blue";							//線の色
-			ctx.stroke();												//線を引く
-
-			let angle1 = 10/180 * Math.PI ;
-			let angle2 = 200/180 * Math.PI ; 
-			ctx.beginPath();
-			ctx.moveTo(50,150);
-			ctx.arc(50, 150, 40, angle1, angle2, false);		//円弧のパス
-			ctx.closePath();
-			ctx.fillStyle = "skyblue";
-			ctx.fill();
-
-			ctx.fillStyle = "black";
-			ctx.font = "100px serif";								//文字の大きさとフォント
-			ctx.fillText("Hello",0,300);						//文字の描画
-
-			var img = new Image();
-			img.src = "image.png";
-			img.onload = function(){
-				ctx.drawImage(img, 100, 100);
+			const input1 = document.getElementById("input1");
+			const input2 = document.getElementById("input2");
+			function myset() {
 			}
-
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp6-3_start").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>6-3_start</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="600" height="600"></canvas></p>
-
-		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			const obake = {x:300, y:300, dx:1, dy:1, s:100};
-		
-			const img = new Image();
-			img.src="media/image.png";
-		
-			//★
-		
-			function anime(){
-		
-				//①消去
-					//★
-		
-				//②描画
-					//★
-		
-				//③計算
-					//★
-					//★
-					//★
-					//★
+			function myget() {	
+			}
+			function myrmv() {
+			}
+			function myclr() {
 			}
 		</script>
 	</body>
-</html>
-`;
+</html>`;
 });
 
-$id("temp6-3").addEventListener("click", function () {
+
+$id("temp12").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>6-3</title>
-		<meta name="viewport" content="width=device-width">
-		<style>
-			#canvas{border:1px solid gray;}
-		</style>
+		<title>12-1</title>
 	</head>
 	<body>
-		<p><canvas id="canvas" width="600" height="600"></canvas></p>
-
+		<p>key：<input id="input1" type="text"></p>
+		<p>value：<input id="input2" type="text"></p>
+		<p>
+			<button onclick="myset();">保存</button>
+			<button onclick="myget();">読出</button>
+			<button onclick="myrmv();">削除</button>
+			<button onclick="myclr();">全削除</button>
+		</p>
 		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-		
-			const obake = {x:300, y:300, dx:1, dy:1, s:100};
-		
-			const img = new Image();
-			img.src = "media/image.png";
-		
-			setInterval(loop, 50);
-		
-			function loop(){
-		
-				//①消去
-				ctx.clearRect(0, 0, 600, 600);
-		
-				//②描画
-				ctx.drawImage(img, obake.x, obake.y, obake.s, obake.s);
-		
-				//③計算
-				obake.x += obake.dx;
-				obake.y += obake.dy;
-				if(obake.x<0 || 500<obake.x){obake.dx *= -1;}
-				if(obake.y<0 || 500<obake.y){obake.dy *= -1;}
+			const input1 = document.getElementById("input1");
+			const input2 = document.getElementById("input2");
+			function myset() {
+				localStorage.setItem(input1.value, input2.value);
+			}
+			function myget() {
+				input2.value = localStorage.getItem(input1.value);
+			}
+			function myrmv() {
+				localStorage.removeItem(input1.value);
+			}
+			function myclr() {
+				localStorage.clear();
 			}
 		</script>
 	</body>
-</html>
-`;
+</html>`;
 });
 
-
-//7.
-$id("temp7-1_start").addEventListener("click", function () {
+$id("temp13-0").addEventListener("click", function () {
 	$id("editor").value
 		= `<!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>7-1_start</title>
-		<meta name="viewport" content="width=320">
-		<style> 
-			*{margin:0; padding:0;}
-			body{text-align:center;}
-			canvas{border:1px solid gray;}
-		</style>
-	</head>
-	<body>
-		<p><canvas id="canvas" width="320" height="480"></canvas></p>
-		<script>
-			const canvas = document.getElementById("canvas"); 
-			const ctx = canvas.getContext("2d");
-
-			//変数の設定と初期化
-			const target = {x:250, y:100,dir:1};  	// ターゲット（位置と移動方向）
-			const player = {x:250, y:400};					// プレイヤー（位置）
-			const ball = {x:-10, y:-10};					// ボール（位置） 
-			const point = 0;											// 得点
-
-			//★
-
-			function loop(){									//アニメ関数
-				//★
-				//★
-				//★
-				//★
-				//★
-
-				//移動計算
-				//★
-				//★
-				//壁衝突計算
-				//★
-				//得点ゲット
-				//★
-				//★
-				//★
-			}
-
-			//独自関数
-			function myclear(){
-				//★
-			}
-
-			function mytarget(x,y){
-				//★
-				//★
-			}
-
-			function mypoint(point,x,y){
-				//★
-				//★
-				//★
-			}
-
-			function myplayer(x,y){
-				//★
-				//★
-			}
-		
-			function myball(x,y){
-				//★	
-				//★
-			}
-
-			//シュートするイベント処理(後述)
-			canvas.addEventListener(
-				"mousedown",
-				(e)=>{
-					ball.x = player.x;
-					ball.y = player.y; 
-				}
-			);
-		
-			//マウスで自分キャラを動かすイベント処理(後述)
-			canvas.addEventListener(
-				"mousemove",
-				(e)=>{
-					const rect = e.target.getBoundingClientRect();
-					player.x = e.clientX-rect.left;
-				}
-			);
-		</script>
-	</body>
-</html>
-`;
-});
-
-$id("temp7-1").addEventListener("click", function () {
-	$id("editor").value
-		= `<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>7-1</title>
-		<meta name="viewport" content="width=322">
+		<title>13</title>
 		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-
-			body {
-				text-align: center;
-			}
-
-			#canvas {
+			div {
 				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 50px auto;
+				color: skyblue;
+				text-align: center;
+				line-height: 200px;
 			}
 		</style>
 	</head>
 	<body>
-		<p><canvas id="canvas" width="320" height="480"></canvas></p>
+		<div id="box1">CSSを操作</div>
 		<script>
-			const canvas = document.getElementById("canvas");
-			const ctx = canvas.getContext("2d");
-
-			//変数の設定と初期化
-			const target = { x: 250, y: 100, dir: 1 };  	// ターゲット（位置と移動方向）
-			const player = { x: 250, y: 400 };					// プレイヤー（位置）
-			const ball = { x: -10, y: -10 };						// ボール（位置） 
-			let point = 0;												// 得点
-
-			setInterval(loop, 50);
-
-			function loop() {											//アニメ関数
-				ctx.clearRect(0, 0, 320, 480);					//画面をクリア
-
-				ctx.fillStyle = "black";
-				ctx.fillRect(target.x - 25, target.y - 25, 50, 10);				//targetを描画
-
-				ctx.fillStyle = "black";
-				ctx.font = "20px sans-serif ";
-				ctx.fillText(point, target.x, target.y - 30);					//得点表示
-
-				ctx.fillStyle = "blue";
-				ctx.fillRect(player.x - 25, player.y - 5, 50, 10);				//playerを描画
-
-				ctx.fillStyle = "red";
-				ctx.fillRect(ball.x - 5, ball.y - 5, 10, 10);					//ballを描画
-
-				//移動計算
-				target.x += target.dir;
-				ball.y -= 5;
-				//壁衝突計算
-				if ((target.x < 25) || (295 < target.x)) { target.dir *= -1; }
-				//得点ゲット
-				if ((100 === ball.y) && (Math.abs(target.x - ball.x) < 25)) {
-					point++;
-				}
-			}
-
-			//シュートするイベント処理(後述)
-			canvas.addEventListener(
-				"mousedown",
-				(e) => {
-					ball.x = player.x;
-					ball.y = player.y;
-				}
-			);
-
-			//マウスで自分キャラを動かすイベント処理(後述)
-			canvas.addEventListener(
-				"mousemove",
-				(e) => {
-					const rect = e.target.getBoundingClientRect();
-					player.x = e.clientX - rect.left;
-				}
-			);
+			const box1 = document.getElementById("box1");
+	
 		</script>
 	</body>
-</html>
-`;
+</html>`;
 });
 
+$id("temp13-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>13-1</title>
+		<style>
+			div {
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 50px auto;
+				color: skyblue;
+				text-align: center;
+				line-height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1" onclick="cssChange();">CSSを操作</div>
+		<script>
+			const box1 = document.getElementById("box1");
+			function cssChange() {
+				box1.style.width = "300px";
+				box1.style.height = "300px";
+				box1.style.color = "white";
+				box1.style.backgroundColor = "skyblue";
+				box1.style.lineHeight = "300px";
+			}
+		</script>
+	</body>
+</html>`;
+});
+
+$id("temp13-2").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>13-2</title>
+		<style>
+			div {
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 50px auto;
+				color: skyblue;
+				text-align: center;
+				line-height: 200px;
+				transition:all 1s linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1" onclick="cssChange();">CSSを操作</div>
+		<script>
+			const box1 = document.getElementById("box1");
+			function cssChange(){
+				box1.style.width = "300px";
+				box1.style.height = "300px";
+				box1.style.color = "white";
+				box1.style.backgroundColor = "skyblue";
+				box1.style.lineHeight = "300px";
+			}
+		</script>
+	</body>
+</html>`;
+});
