@@ -37,7 +37,7 @@ $id("temp2-2_1").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>1-1</title>
+		<title>1</title>
 		<style>
 		</style>
 	</head>
@@ -109,7 +109,7 @@ $id("temp2-2_6").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>6-1-1</title>
+		<title>6</title>
 		<style>
 			p {
 				
@@ -129,7 +129,7 @@ $id("temp2-2_6-2").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>6-1-1</title>
+		<title>6-2</title>
 		<style>
 			p {
 				border:1px solid green;
@@ -170,7 +170,7 @@ $id("temp2-2_6-5-2").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>6-5-1</title>
+		<title>6-5-2</title>
 		<style>
 			p {
 				border:1px solid green;
@@ -192,7 +192,7 @@ $id("temp2-2_6-5-3").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>6-5-1</title>
+		<title>6-5-3</title>
 		<style>
 			p {
 				border:1px solid green;
@@ -215,7 +215,7 @@ $id("temp2-2_6-5-4").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>6-5-1</title>
+		<title>6-5-4</title>
 		<style>
 			p {
 				border:1px solid green;
@@ -239,7 +239,7 @@ $id("temp2-2_6-5-5").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>6-5-1</title>
+		<title>6-5-5</title>
 		<style>
 			p {
 				border:1px solid green;
@@ -264,7 +264,7 @@ $id("temp2-2_6-5-6").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>6-5-1</title>
+		<title>6-5-6</title>
 		<style>
 			p {
 				border:1px solid green;
@@ -626,8 +626,6 @@ $id("temp3-1_6-9").addEventListener("click", function () {
 		<p>重要なことは<strong>ペンキ塗りたて</strong>であることです。</p>
 		<h2>7.img要素</h2>
 		<img src="media/html5.png" alt="HTML5のロゴ画像">
-		<h2>q要素</h2>
-		<p>先生は、<q cite="https://example.jp/">HTML5は楽しいです</q>と言いました。</p>
 		<h2>9.span要素</h2>
 		<p>この文章の<span class="css1">この部分を青色に</span>します。
 		<h2>10.br要素</h2>
@@ -669,19 +667,12 @@ $id("temp3-1_6-10").addEventListener("click", function () {
 		<p>では<a href="https://example.com/">サンプルサイト</a>にアクセスしましょう。</p>
 		<h2>3.small要素</h2>
 		<p>著作は<small>(C) 2019 Nakashimmer sensei.</small>です</p>
-		<p>お問い合わせ先</p>
-		<address>
-			<a href="mailto:naka@example.jp">naka@example.jp</a><br>
-			<a href="tel:000-0000-0000">000-0000-0000</a>
-		</address>
 		<h2>5.em要素</h2>
 		<p>きょうは<em>とても暑い</em>ですね。</p>
 		<h2>6.strong要素</h2>
 		<p>重要なことは<strong>ペンキ塗りたて</strong>であることです。</p>
 		<h2>7.img要素</h2>
 		<img src="media/html5.png" alt="HTML5のロゴ画像">
-		<h2>q要素</h2>
-		<p>先生は、<q cite="https://example.jp/">HTML5は楽しいです</q>と言いました。</p>
 		<h2>9.span要素</h2>
 		<p>この文章の<span class="css1">この部分を青色に</span>します。
 		<h2>10.br要素</h2>
@@ -723,19 +714,12 @@ $id("temp3-1_6-14").addEventListener("click", function () {
 		<p>では<a href="https://example.com/">サンプルサイト</a>にアクセスしましょう。</p>
 		<h2>3.small要素</h2>
 		<p>著作は<small>(C) 2019 Nakashimmer sensei.</small>です</p>
-		<p>お問い合わせ先</p>
-		<address>
-			<a href="mailto:naka@example.jp">naka@example.jp</a><br>
-			<a href="tel:000-0000-0000">000-0000-0000</a>
-		</address>
 		<h2>5.em要素</h2>
 		<p>きょうは<em>とても暑い</em>ですね。</p>
 		<h2>6.strong要素</h2>
 		<p>重要なことは<strong>ペンキ塗りたて</strong>であることです。</p>
 		<h2>7.img要素</h2>
 		<img src="media/html5.png" alt="HTML5のロゴ画像">
-		<h2>q要素</h2>
-		<p>先生は、<q cite="https://example.jp/">HTML5は楽しいです</q>と言いました。</p>
 		<h2>9.span要素</h2>
 		<p>この文章の<span class="css1">この部分を青色に</span>します。
 		<h2>10.br要素</h2>
@@ -777,19 +761,12 @@ $id("temp3-1_6-15").addEventListener("click", function () {
 		<p>では<a href="https://example.com/">サンプルサイト</a>にアクセスしましょう。</p>
 		<h2>3.small要素</h2>
 		<p>著作は<small>(C) 2019 Nakashimmer sensei.</small>です</p>
-		<p>お問い合わせ先</p>
-		<address>
-			<a href="mailto:naka@example.jp">naka@example.jp</a><br>
-			<a href="tel:000-0000-0000">000-0000-0000</a>
-		</address>
 		<h2>5.em要素</h2>
 		<p>きょうは<em>とても暑い</em>ですね。</p>
 		<h2>6.strong要素</h2>
 		<p>重要なことは<strong>ペンキ塗りたて</strong>であることです。</p>
 		<h2>7.img要素</h2>
 		<img src="media/html5.png" alt="HTML5のロゴ画像">
-		<h2>q要素</h2>
-		<p>先生は、<q cite="https://example.jp/">HTML5は楽しいです</q>と言いました。</p>
 		<h2>9.span要素</h2>
 		<p>この文章の<span class="css1">この部分を青色に</span>します。
 		<h2>10.br要素</h2>
@@ -800,7 +777,7 @@ $id("temp3-1_6-15").addEventListener("click", function () {
 		<p>水の化学式はH<sub>2</sub>Oです。</p>
 		<h2>15.ruby要素</h2>
 		<p>あした、<ruby>
-				<rb>渋谷</rb>
+				渋谷
 				<rt>しぶや</rt>
 			</ruby>に遊びに行きます。</p>
 		<p>私は、<ruby>東<rt>とう</rt>京<rt>きょう</rt></ruby>に住んでいます。</p>
@@ -834,19 +811,12 @@ $id("temp3-1_6-16").addEventListener("click", function () {
 		<p>では<a href="https://example.com/">サンプルサイト</a>にアクセスしましょう。</p>
 		<h2>3.small要素</h2>
 		<p>著作は<small>(C) 2019 Nakashimmer sensei.</small>です</p>
-		<p>お問い合わせ先</p>
-		<address>
-			<a href="mailto:naka@example.jp">naka@example.jp</a><br>
-			<a href="tel:000-0000-0000">000-0000-0000</a>
-		</address>
 		<h2>5.em要素</h2>
 		<p>きょうは<em>とても暑い</em>ですね。</p>
 		<h2>6.strong要素</h2>
 		<p>重要なことは<strong>ペンキ塗りたて</strong>であることです。</p>
 		<h2>7.img要素</h2>
 		<img src="media/html5.png" alt="HTML5のロゴ画像">
-		<h2>q要素</h2>
-		<p>先生は、<q cite="https://example.jp/">HTML5は楽しいです</q>と言いました。</p>
 		<h2>9.span要素</h2>
 		<p>この文章の<span class="css1">この部分を青色に</span>します。
 		<h2>10.br要素</h2>
@@ -857,7 +827,7 @@ $id("temp3-1_6-16").addEventListener("click", function () {
 		<p>水の化学式はH<sub>2</sub>Oです。</p>
 		<h2>15.ruby要素</h2>
 		<p>あした、<ruby>
-				<rb>渋谷</rb>
+				渋谷
 				<rt>しぶや</rt>
 			</ruby>に遊びに行きます。</p>
 		<p>私は、<ruby>東<rt>とう</rt>京<rt>きょう</rt></ruby>に住んでいます。</p>
@@ -1309,7 +1279,7 @@ $id("temp4-2_10-1").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>10-1-1</title>
+		<title>10-1</title>
 		<style>
 			div {
 				border: 1px solid gray;
@@ -1580,6 +1550,62 @@ $id("temp5-1_14-4").addEventListener("click", function () {
 `;
 });
 
+$id("temp5-1_15-2").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>15-2</title>
+		<style>
+			div {
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 100px auto;
+				background-image: url("media/bgimg.png");
+			}
+
+			.css1 {
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="css1">ボックス1</div>
+	</body>
+</html>
+`;
+});
+
+$id("temp5-1_15-2-1").addEventListener("click", function () {
+	$id("editor").value
+		= `<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>15-2</title>
+		<style>
+			div {
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 100px auto;
+				background-image: url("media/bgimg.png");
+			}
+
+			.css1 {transition: transform 1s linear 0s;}
+			.css1:hover {transform: rotate(360deg);}
+		</style>
+	</head>
+	<body>
+		<div class="css1">ボックス1</div>
+	</body>
+</html>
+`;
+});
+
+
 //5-2.
 
 $id("temp5-2_16").addEventListener("click", function () {
@@ -1642,7 +1668,7 @@ $id("temp5-2_16-2-1").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>16-2</title>
+		<title>16-2-1</title>
 		<style>
 			div {
 				border: 1px solid gray;
@@ -1680,7 +1706,7 @@ $id("temp5-2_16-2-2-0").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>16-2-1</title>
+		<title>16-2-2-0</title>
 		<style>
 			div {
 				border: 1px solid gray;
@@ -1719,7 +1745,7 @@ $id("temp5-2_16-2-2").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>16-2-1</title>
+		<title>16-2-2</title>
 		<style>
 			div {
 				border: 1px solid gray;
@@ -1769,7 +1795,7 @@ $id("temp5-2_16-2-3-0").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>16-2-3</title>
+		<title>16-2-3-0</title>
 		<style>
 			div {
 				border: 1px solid gray;
@@ -1954,7 +1980,7 @@ $id("temp6-2_3").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>3-1-start</title>
+		<title>3</title>
 	</head>
 	<body>
 		<p id="output1">おはようございます。</p>
@@ -2015,7 +2041,7 @@ $id("temp6-2_4").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>4-0-start</title>
+		<title>4</title>
 	</head>
 	<body>
 		<p><button onclick="btn1();">押す</button></p>
@@ -2136,7 +2162,7 @@ $id("temp7-1_6").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>6-0-start</title>
+		<title>6</title>
 		<style>
 		</style>
 	</head>
@@ -2365,7 +2391,7 @@ $id("temp7-2_7-7-0").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>7-7-start</title>
+		<title>7-7-0</title>
 		<style>
 		</style>
 	</head>
@@ -2423,7 +2449,7 @@ $id("temp7-2_7-8-1-0").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>7-8-1-start</title>
+		<title>7-8-1-0</title>
 		<style>
 		</style>
 	</head>
@@ -2472,7 +2498,7 @@ $id("temp7-2_7-8-2-0").addEventListener("click", function () {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>7-8-2-start</title>
+		<title>7-8-2-0</title>
 		<style>
 		</style>
 	</head>
