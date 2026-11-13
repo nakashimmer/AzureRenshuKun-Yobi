@@ -99,6 +99,7 @@ p {
 	margin: 4px 2px 0px;
 	border-radius: 2px;
 	-webkit-appearance: none;
+	appearance: none;
 }
 
 button {
